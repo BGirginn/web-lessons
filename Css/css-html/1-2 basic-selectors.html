@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Selectors</title>
+
+    <style>
+
+        /* tüm h1 leri seç*/
+        /* h1{
+            color: yellow;
+            background-color: blueviolet;
+        }
+        
+        p {
+            color: indigo;
+            background-color: coral;
+        } */
+
+        /* h1,p{
+            color: indigo;
+            background-color: orange;
+        } */
+
+        /* #logo{
+            color: indigo;
+            background-color: orange;
+        } */
+
+        /* .info{
+            color: yellow;
+            background: gray;
+        } */
+
+        /* #logo, .lead{
+            color: yellow;
+            background: gray;
+        }  */
+        /* idsi logo olanların içinden class ı lead olan ı alır */
+
+        /* #para1.lead{
+            color: yellow;
+            background-color: purple;
+        } */
+
+        /* a{
+            text-decoration: none;
+        }   */
+        /* linkler default olarak altı çizili halde gelir bu onu siler */
+
+        /* ul li a{
+            text-decoration: none;
+        } */
+    /* 
+        .info span{
+            color: red;
+        }
+        parent class infonun içindeki spanleri kırmızı yap 
+        */
+
+        /* 
+        .info .primary
+        {
+            color: red;
+        }
+        parent class info alt class primarynin içindeki spanleri kırmızı yap 
+        */
+
+        *{
+            font-size: 25px;
+        }
+        /* tüm class ve etkiketleri etkiler */
+
+    </style>
+    
+</head>
+<body>
+    <header>
+        <h1>Header 1</h1>
+        <h1 id="logo">Logo</h1>
+
+        <ul>
+            <li>
+                <a href="#">Contact</a> <br>
+            </li>
+            <li>
+                <a href="#">Services</a> 
+            </li>
+        </ul>
+    </header>
+    <a href="#">merhaba</a>
+    <h1>
+        Header 2
+    </h1>
+    <p id="para1" class="lead info">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, inventore?
+    </p>
+    <p class="info">
+        Lorem ipsum <span class="primary">dolor</span> sit, amet consectetur adipisicing elit. Enim, voluptate.
+    </p>
+    <p class="info">
+        Lorem ipsum <span>dolor</span> sit amet consectetur, adipisicing elit. Libero, dolore.
+    </p>
+    <p>Test Paragraf</p>
+
+    <a href="#">Home</a>
+
+</body>
+</html>

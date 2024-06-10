@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formsAndInput</title>
+</head>
+<body>
+    
+    <form action="process.php"> <!-- input edilen tüm bilgilerin saklanacağı dosya veya ne isteniyorsa o yazılır-->
+
+        <!-- html5 input -->
+        <!-- name <br> textbox ın alt satıra inmesi için br -->
+        <label for="Name">Name</label><br>
+        <input type="text" id="Name" name="name" placeholder="İsminizi Giriniz"> <br> <br>  <!-- the inf from the textbox naming this or like this idk -->
+
+        <label for="email">Email</label><br>
+        <input type="email" name="email" id="email"placeholder="Mailinizi Gİriniz"> <br><br>
+
+        <label for="password">Password</label><br>
+        <input type="password" name="password" id="password"placeholder="Şifrenizi Giriniz"><br><br>
+
+        <label for="date">Date</label><br>
+        <input type="date" name="date" id="date"><br><br>
+
+        Gender <br>
+
+        Male
+        <input type="radio" name="gender" value="male">
+
+        Female
+        <input type="radio" name="gender" value="female">
+        
+        Other
+        <input type="radio" name="gender" value="male"> <br><br> 
+
+        <!-- radiobuttonlarda name aynı olmalı çünkü tek değişkene birden fazla bağımsız değer atanamaz -->
+
+        
+        Hobbies <br>
+
+        Teknoloji
+        <input checked type="checkbox" name="tech" id="tech"><br>
+        <!-- herhangi bir butonun kapamasından hemen önce checked eklersen sayfa yüklenince oto seçili gelir -->
+        
+        Müzik
+        <input type="checkbox" name="music" id="music"><br>
+
+        Sanat
+        <input type="checkbox" name="art" id="art"><br><br>
+
+
+        Degree <br>
+        <select name="degree" id="degree">
+            <option value="lisans">Lisans</option>
+            <option selected value="ylisans">Yüksek Lisans</option>
+            <option value="Doktora">Doktora</option>
+        </select><br><br>
+
+        <textarea name="" id="" cols="14" rows="4" placeholder="Mesajınızı giriniz"></textarea><br><br>
+        <!-- placeholder ile geçici filigran mesaj oluşturabilirsin -->
+        
+        <input type="submit" value="Kaydet">  <!-- ekrana eklenecek olan etkileşimli öğe türü type isim valueden gelir -->
+        <input type="reset" value="Sıfırla">
+
+    <!-- herhangi bir butonun kapamasından hemen önce checked eklersen sayfa yüklenince oto seçili gelir -->
+        
+        <!-- <button type="submit">butonun ismi</button>  ALTERNATİF YOL -->
+    </form>
+
+
+</body>
+</html>
